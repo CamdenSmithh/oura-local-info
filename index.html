@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Local Oura Exporter is a personal command-line application for downloading and exploring your own Oura data on your computer.">
+  <title>My Local Oura Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="shell">
+    <a class="brand" href="index.html">My Local Oura Exporter</a>
+    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div></header>
+  <main id="main" class="shell">
+    <p class="eyebrow">Personal use · Runs on your computer</p>
+    <h1>Your Oura history.<br>On your own computer.</h1>
+    <p class="lead">My Local Oura Exporter is a local command-line application for downloading and exploring your own Oura data through the Oura API v2.</p>
+    <div class="prose">
+      <div class="note"><p>This website provides information about the application. It does not connect to your Oura account, accept tokens, or display health records.</p></div>
+      <h2>What the application does</h2>
+      <p>The application requests the personal datasets you authorize, such as sleep, activity, readiness, heart rate and workouts. It saves the returned records as JSON files on your computer. Optional CSV files and local summaries help you explore those records.</p>
+      <p>Data availability depends on your Oura account, granted permissions, membership, device and API support. The application remains subject to API compatibility verification; this page does not guarantee complete historical coverage.</p>
+      <h2>How access works</h2>
+      <p>Authorization takes place with Oura. The local application uses an OAuth access token that you provide in its local <code>.env</code> file. It sends authenticated requests directly to Oura's API and saves the results locally. This public website is not an OAuth callback or a token exchange service.</p>
+      <h2>Where your data stays</h2>
+      <p>The application has no hosted health-data service, analytics integration or advertising. It does not upload your exported records to this website or GitHub. You control your local files and any copies you choose to make.</p>
+      <p>Read the <a href="privacy.html">privacy notice</a> for data handling and the <a href="terms.html">terms of use</a> for the application's intended purpose.</p>
+      <h2>Contact</h2>
+      <p>For questions about this personal application, use the contact email listed in its Oura application registration or consent details. Do not include an access token, authorization URL or health-data export in your message.</p>
+    </div>
+  </main>
+  <footer><div class="shell"><p>Independent personal project. Not affiliated with, endorsed by, or operated by Oura.</p></div></footer>
+</body>
+</html>
